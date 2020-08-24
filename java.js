@@ -1,7 +1,3 @@
-function WhoIsMrGay(){
-    console.log("Mr Gay is Christian")
-}
-
 let form = document.getElementsByTagName("form")[0];
 let statsUsername = document.querySelector(".statusMessage.username")
 let statspassword = document.querySelector(".statusMessage.password")

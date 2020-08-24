@@ -20,7 +20,6 @@ img{
 #wrapper{
     max-width:980px;
     margin:0 auto;
-    font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
 }
 h1{
     text-align:center;
@@ -29,70 +28,55 @@ h1{
 h2{
     padding-bottom:0.5rem;
 }
-
-nav ul{
-    list-style-type:none;
-    display:flex;
-    justify-content: space-around;
-    padding:1em 0;
-    margin:1em 0;
-    border-top:solid 1px #000;
-    border-bottom:solid 1px #000;
-}
-nav a{
-    text-decoration:none;
-    color:#000;
-}
-main{
-    margin:2em 0; 
-    display: grid;
-    place-items: center;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: 10%;
-    
-}
-#phonenumber2{
-    color: #fff;
-    border: none;
-    outline: none;
-}
-.reset{
-    background-color: rgb(78, 78, 78);
-}
-.linkSend{
-    color: #efffff;
-    text-decoration: none;
-}
 form{
     display: grid;
     place-items: center;
-    width: 166px;
+    border: 1px solid #000;
 }
-#send{
-    margin-top: 2em;
-    place-self: flex-start;
-    border: none;
-    background-color: rgb(21, 176, 223);
-    padding: 5% 8%;
-    border-radius: 5px;
-    color: white;
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
-}
-.telefon{
-    color: #eee;
-}
-.telefon:hover{
-    display: none;
-}
-form div{
+
+.adresseGrid{
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
 }
-footer{
-    text-align: center;
-    background-color: #001020;
-    color:#FFF;
-    padding:2em 0;
+
+
+
+
+
+.formGrid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 5%;
+}
+input{
+    border: none;
+}
+form{
+    max-width: 470px;
+    background-color: #0C1824;
+    margin: 0 auto;
+    color: #ECE8E1;
+}
+form label{
+    font-family: 'Roboto Mono', monospace;
+    padding: 1.5em 0 0 0;
+    font-weight: bold;
+    display: block;
+}
+fieldset{
+    border: none;
+}
+
+.send{
+    display: block;
+    margin-left: 67%;
+    margin-top: 2em;
+    background-color: #FC4A56;
+    padding: 2% 8%;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 700;
+    color: #ECE8E1;
+    border: none;
 }
 

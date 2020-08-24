@@ -13,8 +13,29 @@
 
     
 
-        <form>
-            
+        <!-- <form>
+            <fieldset>
+                <label for="fornavn">Fornavn*</label>
+                <input type="text" name="fornavn" id="fornavn">
+
+                <label for="efternavn">Efternavn*</label>
+                <input type="text" name="efternavn" id="efternavn">
+            </fieldset>
+            <fieldset>
+                <div class="adresseGrid">
+                    <label for="adresse">Adresse*</label>
+                    <input type="text" name="adresse" id="adresse">
+
+                    <label for="zip">Post kode*</label>
+                    <input type="text" name="zip" id="zip">
+
+                    <label for="city">By*</label>
+                    <input type="text" name="city" id="city">
+
+                    <label for="contry">Land*</label>
+                    <input type="text" name="contry" id="contry">
+                </div>
+            </fieldset>
             <div class="inputGroup">
                 <label for="username">Brugenavn</label>
                 <input type="text" name="username" id="username">
@@ -26,6 +47,62 @@
                 <span class="statusMessage password"></span>
             </div>
             <button type="submit">Log ind</button>
+        </form> -->
+
+        <form name="myForm" id="form" onsubmit="return validateForm()">
+            <div id="myform">
+                <fieldset>
+                    <div class="formGrid">
+                        <div>
+                            <label>Email*</label>
+                            <input type="email" id="email" name="email">
+                        </div>
+                        <div>
+                            <label>Brugernavn*</label>
+                            <input type="username" id="username" name="username">
+                        </div>
+                        <div>
+                            <label>Adgangskode*</label>
+                            <input type="password" id="besked"  name="besked">
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <div class="formGrid">
+                        <div>
+                            <label>Fornavn*</label>
+                            <input type="text" id="fornavn" name="fornavn">
+                        </div>
+                        <div>
+                            <label>Efternavn*</label>
+                            <input type="text" id="efternavn" name="efternavn">
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <div class="formGrid">
+                        <div>
+                            <label>Adresse*</label>
+                            <input type="text" id="adresse" name="adresse">
+                        </div>
+                        <div>
+                            <label>Post nummer*</label>
+                            <input type="text" id="zip" name="zip">
+                        </div>
+                        <div>
+                            <label>By*</label>
+                            <input type="text" id="city" name="city">
+                        </div>
+                        <div>
+                            <label>Land*</label>
+                            <input type="text" id="contry" name="contry">
+                        </div>
+                    </div>
+                </fieldset>
+                <button type="submit" class="send">Send</button>
+            </div>
         </form>
 
     
