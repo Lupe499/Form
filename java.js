@@ -30,5 +30,6 @@ form.addEventListener("submit", function(event){
         return
     }
 
+    
     fetch("login.php")
 });
